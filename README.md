@@ -1,6 +1,35 @@
-# 🪷 VedaSphere
+#  VedaSphere
 
 **Ancient wisdom · Modern life** — An AI-powered Vedic guidance platform built with React + Vite.
+
+##  Live Demo
+https://vedasphere.vercel.app/
+
+##  Status
+VedaSphere is currently under active development.
+
+Current version includes:
+- AI-powered spiritual guidance
+- Daily wisdom experience
+- 205+ shlokas
+- Vedic text exploration
+- Streaming chat interface
+- Modular React architecture
+
+AI features currently require a valid Anthropic API key.
+
+---
+
+## Tech Stack
+
+- React 18
+- Vite 5
+- JavaScript (ES6+)
+- CSS3
+- Anthropic Claude API
+- Vercel
+
+---
 
 ## Project Structure
 
@@ -24,7 +53,7 @@ vedasphere/
     │   └── useStreamAI.js        # streamAI(), parseVedaResponse(), uid(), getDailyIdx()
     │
     └── components/
-        ├── ApiKeyBanner.jsx      # 🔑 API key input banner
+        ├── ApiKeyBanner.jsx      # API key input banner
         ├── Sidebar.jsx           # Navigation sidebar
         ├── Mandala.jsx           # Animated SVG mandala
         ├── Message.jsx           # Chat bubble (user + AI)
@@ -36,6 +65,18 @@ vedasphere/
         ├── ShlokaLibraryPage.jsx # 205 shlokas with search/filter
         ├── WisdomModal.jsx       # Vedic text detail modal
         └── ShlokaModal.jsx       # Shloka detail modal
+```
+## Features
+
+| Feature | Description |
+|---------|-------------|
+|  Landing | Daily shloka hero with carousel, feature cards, quick-start prompts |
+|  Vedic Wisdom | 6 foundational texts (Gita, Upanishads, Rigveda, Yoga Sutras, Arthashastra, Puranas) |
+|  Personal Guidance | 6 life topics → AI guidance streamed in real-time |
+|  Shloka Library | 205 shlokas, 39 categories, full-text search, favourites |
+|  Chat | Streaming AI chat with shloka rendering, multi-conversation history |
+|  API Key | Secure in-app key input with live status indicator |
+
 ```
 
 ## Getting Started
@@ -61,7 +102,7 @@ The app calls Anthropic's API directly from the browser using the
 1. Get an API key from [console.anthropic.com](https://console.anthropic.com)
 2. Click **Add Key** in the orange banner at the top of the app
 3. Paste your `sk-ant-...` key and click Save
-4. The dot turns green — chat is live ✅
+4. The dot turns green — chat is live 
 
 ### For Production (Recommended)
 
@@ -86,17 +127,6 @@ export async function POST(req) {
 
 Then update `useStreamAI.js` to call `/api/chat` instead of Anthropic directly.
 
-## Features
-
-| Feature | Description |
-|---------|-------------|
-| 🏠 Landing | Daily shloka hero with carousel, feature cards, quick-start prompts |
-| 📖 Vedic Wisdom | 6 foundational texts (Gita, Upanishads, Rigveda, Yoga Sutras, Arthashastra, Puranas) |
-| 🧘 Personal Guidance | 6 life topics → AI guidance streamed in real-time |
-| 📜 Shloka Library | 205 shlokas, 39 categories, full-text search, favourites |
-| 💬 Chat | Streaming AI chat with shloka rendering, multi-conversation history |
-| 🔑 API Key | Secure in-app key input with live status indicator |
-
 ## Deployment (Vercel)
 
 ```bash
@@ -107,4 +137,19 @@ vercel
 Set `ANTHROPIC_API_KEY` in Vercel's environment variables dashboard.
 
 ---
+
+## Future Roadmap
+
+- Secure backend API integration
+- Next.js migration
+- Voice interaction
+- User authentication
+- Saved conversations
+- Sanskrit transliteration support
+- Personalized spiritual journeys
+- Mobile application version
+- 
+---
 Built with React 18 · Vite 5 · Anthropic Claude
+
+Created by Sumatra Pal.
