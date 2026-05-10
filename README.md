@@ -148,7 +148,7 @@ Set `ANTHROPIC_API_KEY` in Vercel's environment variables dashboard.
 - Sanskrit transliteration support
 - Personalized spiritual journeys
 - Mobile application version
-- 
+  
 ---
 Built with React 18 · Vite 5 · Anthropic Claude
 
